@@ -9,54 +9,48 @@
 </head>
 <body>
     <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto pl-32 pr-32">
-                    <div class="grid grid-cols-12 ">
-                        <div class="col-start-1 col-end-5"> 
-                            <form>
-                            <h1 class=" font-sans font-semibold text-lg col-start-1 col-end-5 mb-5" >Subscribe to our newsletter for updates.</h1>
-                            <div class="flex">
-                                <div>
-                                <input class="w-60px px- py-2 bg-#d86943 rounded-md" id="email" type="text">
-                            </div>
-                                <button class="w-60px px-1 py-1 bg-orange-500	text-white	rounded-md ms-5">
-                                    Subscribe
-                                </button>
-                            </form>
-                            </div>
+        <div class="container px-4 py-12 mx-auto">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-12 lg:grid-cols-12 lg:px-32">
+                <div class="md:col-span-12 lg:col-span-6">
+                    <form>
+                        <h1 class="font-sans font-semibold text-lg mb-5">Subscribe to our newsletter for updates.</h1>
+                        <div class="flex flex-col md:flex-row">
+                            <input class="px-4 py-2 mb-4 md:mb-0 md:mr-3 bg-white rounded-md" id="email" type="text" placeholder="Your email">
+                            <button class="px-4 py-2 bg-orange-500 text-white rounded-md">
+                                Subscribe
+                            </button>
                         </div>
-                        <div class="grid col-start-7 col-end-9	">
-                            <p class="text-[bold]  mb-5 ">Quick Link</p>
-                            <div class="flex ">
-                                <ul>
-                                    <li class="mb-2"><a href="#">Home</a></li>
-                                    <li class="mb-2"><a href="#">Who We Are</a></li>
-                                    <li><a href="#">Our Philosophy</a></li> 
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="grid col-start-10">
-                            <p class="text-[bold]  mb-5">Technologies</p>
-                            <div>
-                                <ul >
-                                    <li class="mb-2"><a href="#">HTML</a></li> 
-                                    <li class="mb-2"><a href="#">CSS</a></li>
-                                    <li><a href="#">JavaScript</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    </form>
+                </div>
+                <!-- Container for Quick Links and Technologies -->
+                <div class="md:col-span-12 lg:col-span-6 flex flex-col md:flex-row md:gap-6 lg:gap-6">
+                    <div class="md:col-span-6 lg:col-span-6 lg:flex lg:flex-col">
+                        <p class="font-bold mb-5">Quick Links</p>
+                        <ul>
+                            <li class="mb-2"><a href="#">Home</a></li>
+                            <li class="mb-2"><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Philosophy</a></li> 
+                        </ul>
                     </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7 mb-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
+                    <div class="md:col-span-6 md:ml-40 :col-span-6 lg:flex lg:flex-col lg:ml-40">
+                        <p class="font-bold mb-5">Technologies</p>
+                        <ul>
+                            <li class="mb-2"><a href="#">HTML</a></li>
+                            <li class="mb-2"><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+            
+            <hr class="my-6 border-[#d86943]">
+            
+            <div class="flex justify-start">
+                <a href="#">
+                    <img class="w-auto h-7 " src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
